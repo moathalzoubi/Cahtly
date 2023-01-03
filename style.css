@@ -34,16 +34,6 @@ body {
 input[type='text'],
 button {
   padding: 4px 8px;
-  border: 0;
-  outline: 0;
-}
-button {
-  background-color: transparent;
-  cursor: pointer;
-}
-button:hover i {
-  color: #79c7c5;
-  transform: scale(1.2);
 }
 
 /* container */

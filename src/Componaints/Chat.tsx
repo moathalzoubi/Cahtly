@@ -13,21 +13,23 @@ export const ChatPanel = () => {
             </div>
             <div className="name">Kai Cheng</div>
           </div>
-          <ul className="bar_tool">
-            <li>
-              <IconButton icon={<FcCallback />} />
-            </li>
-            <li>
-              <span className="m-1">
-                <FcVideoCall />
-              </span>
-            </li>
-            <li>
-              <span className="m-1">
-                <FcMenu />
-              </span>
-            </li>
-          </ul>
+          <div className="">
+            <IconButton
+              variant="outline"
+              colorScheme="blue"
+              icon={<FcCallback />}
+            />
+            <IconButton
+              variant="outline"
+              colorScheme="blue"
+              icon={<FcVideoCall />}
+            />{' '}
+            <IconButton
+              variant="outline"
+              colorScheme="blue"
+              icon={<FcMenu />}
+            />
+          </div>
         </div>
         <div className="body">
           <div className="incoming">
@@ -49,13 +51,7 @@ export const ChatPanel = () => {
               </p>
             </div>
           </div>
-          <div className="typing">
-            <div className="bubble">
-              <div className="ellipsis dot_1"></div>
-              <div className="ellipsis dot_2"></div>
-              <div className="ellipsis dot_3"></div>
-            </div>
-          </div>
+          <Typing />
         </div>
         <div className="foot">
           <input type="text" className="msg" placeholder="Type a message..." />
