@@ -80,16 +80,18 @@ li {
   display: block;
   border-radius: 50%;
 }
-.head .bar_tool {
+.head-icons {
   display: flex;
 }
-.head .bar_tool i {
+.appicons {
   padding: 5px;
-  width: 30px;
-  height: 30px;
+  margin: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.appicons :hover {
+  background-color: #b30044;
 }
 
 /* body */
@@ -104,7 +106,7 @@ li {
   border-radius: 15px;
 }
 .body .bubble p {
-  color: #f9fbff;
+  color: #eee;
   font-size: 14px;
   text-align: left;
   line-height: 1.4;
@@ -113,13 +115,13 @@ li {
   text-align: left;
 }
 .body .incoming .bubble {
-  background-color: #b2b2b2;
+  background-color: #000000;
 }
 .body .outgoing {
   text-align: right;
 }
 .body .outgoing .bubble {
-  background-color: #79c7c5;
+  background-color: #b30044;
 }
 
 /* foot */
@@ -140,10 +142,6 @@ li {
 }
 .ellipsis {
   display: inline-block;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background-color: #97979777;
 }
 .dot_1 {
   /* animation: name duration timing-function delay iteration-count */
